@@ -66,6 +66,29 @@ alert(resultado);
 
 //16. Criando e Acessando Array:
 
+const frutas = [];
+for (let i = 0; i < 5; i++) {
+    const fruta = prompt(`Digite a fruta ${i + 1}:`);
+    frutas.push(fruta); 
+}
+
+console.log(`A terceira fruta é: ${frutas[2]}`);
+
+//17. Função com Valor Padrão em Dois Parâmetros:
+
+function saudacao(nome, saudacao = "Bem-vindo(a)") {
+    return `${saudacao}, ${nome}!`;
+}
+
+const nomeUsuario = prompt("Qual o seu nome?:");
+
+const saudacaoUsuario = prompt("Digite uma saudação:");
+
+const resultao = saudacao(nomeUsuario, saudacaoUsuario || undefined);
+alert(resultao);
+
+
+
 
 
 
