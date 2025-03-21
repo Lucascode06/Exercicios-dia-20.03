@@ -1,4 +1,5 @@
 
+
 //11. Verificação de Número Positivo ou Negativo:
 
 function verificarSinal(nume) {
@@ -132,7 +133,8 @@ function contarvogais (Palavra){
         }
         console.log(contador);
     }
-    contarvogais(palavra)   
+    contarvogais(palavra)  
+
 //21. Soma dos Elementos de um Array:
 
 
@@ -173,6 +175,8 @@ function anoBissexto(ano) {
 const anoUsuario = parseInt(prompt("Digite um ano:"));
 const rsultado = anoBissexto(anoUsuario);
 alert(`O ano ${anoUsuario} é bissexto? ${rsultado}`);
+
+
 
 
 
