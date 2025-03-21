@@ -1,3 +1,4 @@
+
 //11. Verificação de Número Positivo ou Negativo:
 
 function verificarSinal(nume) {
@@ -10,9 +11,9 @@ function verificarSinal(nume) {
     }
 }
 
-let numeroUsuario = parseFloat(prompt("Digite um número:"));
+let numeroUuario = parseFloat(prompt("Digite um número:"));
 
-verificarSinal(numeroUsuario);
+verificarSinal(numeroUuario);
 
 //12. Função para Converter Celsius em Fahrenheit:
 
@@ -86,6 +87,96 @@ const saudacaoUsuario = prompt("Digite uma saudação:");
 
 const resultao = saudacao(nomeUsuario, saudacaoUsuario || undefined);
 alert(resultao);
+
+
+
+
+//18. Verificação de Nota:
+
+function verificarAprovacao(nota) {
+    if (nota >= 6) {
+        return "Aprovado";
+    } else {
+        return "Reprovado";
+    }
+}
+
+const notaUsuario = parseFloat(prompt("Digite a sua nota:"));
+
+const resul = verificarAprovacao(notaUsuario);
+alert(resul);
+
+
+
+//19. Laço for para Contagem de Pares:
+
+for (let i = 0; i <= 30; i++) {
+    if (i % 2 === 0) { 
+        console.log(i); 
+    }
+}
+
+//20. Contagem de Vogais:
+
+let palavra = prompt ("Digite uma palavra:");
+
+function contarvogais (Palavra){
+
+    const Vogais = "aeiouAEIOU"
+    let contador = 0
+
+        for (let letra of palavra){
+            if (Vogais.includes(letra)){
+                contador++;
+            }
+        }
+        console.log(contador);
+    }
+    contarvogais(palavra)   
+//21. Soma dos Elementos de um Array:
+
+
+//22. Função para Dobrar Números:
+
+function dobrarNumero(numero) {
+    return numero * 2; 
+}
+
+const numeroUsuario = parseFloat(prompt("Digite um número:"));
+
+const resutado = dobrarNumero(numeroUsuario);
+alert(`O dobro é ${resutado}.`);
+
+
+
+//23. Laço While para Contagem de Pares:
+
+
+let nmero = 2; 
+
+while (nmero <= 20) {
+    console.log(nmero); 
+    nmero += 2; 
+}
+
+//25. Verificação de Ano Bissexto:
+
+function anoBissexto(ano) {
+
+    if ((ano % 4 === 0 && ano % 100 !== 0) || (ano % 400 === 0)) {
+        return true; 
+    } else {
+        return false; 
+    }
+}
+
+const anoUsuario = parseInt(prompt("Digite um ano:"));
+const rsultado = anoBissexto(anoUsuario);
+alert(`O ano ${anoUsuario} é bissexto? ${rsultado}`);
+
+
+
+
 
 
 
