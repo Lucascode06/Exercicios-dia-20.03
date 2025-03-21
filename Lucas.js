@@ -39,6 +39,34 @@ console.log(`A soma dos números de 1 até 100 é: ${soma}`);
 
 //14. Substituição de Palavras em String:
 
+function substituirPalavra(texto) {
+    const textoSub = texto.replace(/azul/g, "vermelho");
+    return textoSub;
+}
+
+
+const entradaUsuario = prompt("Digite uma frase:");
+const novaFrase = substituirPalavra(entradaUsuario);
+alert(novaFrase);
+
+
+//15. Verificação de Tamanho de String:
+
+function verificarTamanho(texto) {
+    if (texto.length > 10) {
+        return "A frase tem mais de 10 caracteres.";
+    } else {
+        return "A frase tem 10 caracteres ou menos.";
+    }
+}
+
+const entradaUsu = prompt("Digite uma frase:");
+const resultado = verificarTamanho(entradaUsu);
+alert(resultado);
+
+//16. Criando e Acessando Array:
+
+
 
 
 
